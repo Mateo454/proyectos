@@ -13,13 +13,13 @@ window.addEventListener('scroll', function(){
     let value = window.scrollY;
     
     transparente.style.marginLeft =  value * 0.7 + 'px';
-    nube1.style.left = value* -1  + 'px';
-    nube2.style.left = value* -1  + 'px';
+    nube1.style.left = value* -5  + 'px';
+    nube2.style.left = value* -5  + 'px';
     btn.style.marginTop = value * 0.7 + 'px';
     slogan.style.marginBottom =   value* -1  + 'px';
-    viento.style.left = value* -1  + 'px';
+    viento.style.left = value* -5  + 'px';
     header.style.marginTop = value * 0.4 + 'px';
-    persona.style.marginLeft = value* 0.8  + 'px';
+    persona.style.marginLeft = value* 4  + 'px';
 
 })
 

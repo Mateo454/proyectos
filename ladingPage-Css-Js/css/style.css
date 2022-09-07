@@ -143,6 +143,89 @@ section #btn:hover{
     color: #fff;
 }
 
+.contenedor{
+    display: flex;
+    width: 700px;
+    height: 90px;
+    color:#ffffff;
+    font-size: 80px;
+    line-height: 80px;
+    
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    
+    
+    
+}
+
+.ul2{
+    
+    list-style: none;
+    padding-left: 10px;
+    animation: change 8s infinite;
+
+    
+}
+
+ul,p{
+    margin: 0;
+}
+
+@keyframes change{
+    0%{ margin-top: 0; }
+    20%{margin-top: 0;}
+    25%{margin-top: -80px;}
+    50%{margin-top: -80px;}
+    55%{margin-top: -160px;}
+    80%{margin-top: -160px;}
+    85%{margin-top: -80px;}
+    95%{margin-top: -80px;}
+    100%{margin-top: 0;}
+
+
+}
+
+.contenedor2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:  url('../images/paisaje.jpg') ;
+    background-size: cover;
+    background-position: fixed;
+}
+
+.H2S{
+    position: relative;
+    font-size: 6em;
+    color:#222;
+    font-family: 'Rancho', sans-serif;
+
+}
+
+.H2S::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 315px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 5px solid #fff;
+    font-family: 'Rancho', sans-serif;
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+
+}
+
+@keyframes animate{
+    0%,10%,100%{width: 0}
+    70%,90%{ width: 100%}
+
+}
+
 /* AHORA HAREMOS EL RESPONSIVO */
 @media (max-width: 991px){
     .sec{
@@ -184,4 +267,6 @@ section #btn:hover{
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    
 }
